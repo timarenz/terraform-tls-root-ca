@@ -16,4 +16,5 @@ resource "tls_self_signed_cert" "root_ca" {
   validity_period_hours = var.validity_period_hours
   is_ca_certificate     = true
   allowed_uses          = var.allowed_uses
+  uris = var.uris
 }

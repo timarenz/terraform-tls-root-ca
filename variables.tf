@@ -21,6 +21,12 @@ variable "common_name" {
   type = string
 }
 
+variable "uris" {
+  description = "Allows to specify the URIs required for SPIFFE SVID Signing certificates"
+  type = list(string)
+  default = null
+}
+
 variable "validity_period_hours" {
   description = "Default validity is 262980 hours which is 30 years"
   type        = string
